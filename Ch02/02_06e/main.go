@@ -12,7 +12,7 @@ func main() {
 
 	n := time.Now()
 	fmt.Printf("The time currently is %s\n", n)
-	fmt.Printf("This object's type is %T\n", n)
+	fmt.Printf("This object's type is %T\n", n)  // T to see the objects type
 
 	fmt.Printf(n.Format(time.ANSIC) + "\n")
 
