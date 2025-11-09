@@ -5,7 +5,10 @@ import (
 )
 
 func main() {
-	// This is an array
-	var colors = [3]string{"Red", "Green", "Blue"}
+	// // This is a slice
+	// var colors = []string{"Red", "Green", "Blue"}
+	
+	var colors = make{[]string, 0, 3}
+	
 	fmt.Println(colors)
 }
