@@ -16,7 +16,7 @@ func main() {
 		fmt.Println(colors[i])
 	}
 
-	for _, color := range colors {
+	for _, color := range colors { // _ means ik i have to assign the vairaible but i dont need to use it (basically ignore it)
 		fmt.Println(color)
 	}
 
@@ -31,7 +31,7 @@ func main() {
 		sum += sum
 		fmt.Println("Sum:", sum)
 		if sum > 200 {
-			goto theEnd
+			goto theEnd //label like in low lvl languages (LMC)
 		}
 	}
 
