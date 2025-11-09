@@ -20,16 +20,16 @@ func doSomething() {
 
 }
 
-func addValues(value1, value2 int) int {
+func addValues(value1, value2 int) int { //last int is the return data type
 	return value1 + value2
 }
 
-func addAllValues(values ...int) (int, int, float64) {
+func addAllValues(values ...int) (int, int, float64) {  // slice of integers (SO ITS NOT CONSTRAINED TO SPECIFIC LENGTH, can be 2 numbers, can be 10)
 	sum := 0
-	for _, v := range values {
+	for _, v := range values { // values is a slice
 		sum += v
 	}
 	count := len(values)
 	average := float64(sum) / float64(count)
-	return sum, count, average
+	return sum, count, average // IMPORTANT: look ho it mirrors the (int, int, float64) at the top
 }
