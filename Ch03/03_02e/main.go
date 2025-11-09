@@ -6,8 +6,8 @@ import (
 
 func main() {
 
-	anInt := 42
-	var p *int = &anInt
+	anInt := 42 
+	var p *int = &anInt // point to memory adddress ampersand pointer
 
 	if p == nil {
 		fmt.Println("p is nil")
@@ -20,4 +20,5 @@ func main() {
 	*pointer1 = *pointer1 / 31
 	fmt.Println("Pointer:", *pointer1)
 	fmt.Println("Original value:", value1)
+	//shown here is how changing the pointer, changes the underlying variable
 }
